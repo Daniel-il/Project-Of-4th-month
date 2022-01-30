@@ -1,0 +1,119 @@
+.enroll {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: $desktop-size;
+  width: 100%;
+  background-color: $primary-color-1;
+  font-family: $font-family;
+
+  &__main-message {
+    display: flex;
+    margin-bottom: 120px;
+    flex-direction: column;
+    max-width: 685px;
+    width: 100%;
+  }
+  &__arrow {
+    max-height: 95px;
+    max-width: 129px;
+    margin: 60px 50px 0 50px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 120px;
+    max-width: 685px;
+    width: 100%;
+    margin: 50px 0 120px;
+    color: $primary-color-2;
+  }
+  &__input-container {
+    max-width: 557px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: flex;
+  }
+  &__input {
+    border-radius: 8px 0px 0px 8px;
+    border: 2px solid $primary-color-3;
+    background-color: $primary-color-2;
+    max-width: 348px;
+    width: 100%;
+    height: 50px;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+  }
+  &__input:focus {
+    + .enroll__button {
+      font-weight: 500;
+    }
+  }
+  &__button {
+    max-width: 205px;
+    width: 100%;
+    height: 50px;
+    justify-items: center;
+    padding: 0;
+    border: 2px solid $primary-color-3;
+    background-color: $primary-color-2;
+    border-radius: 0px 8px 8px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__button:hover {
+    font-weight: 500;
+  }
+}
+@media screen and(max-width: $desktop-size) {
+  .enroll {
+    &__arrow {
+      display: none;
+    }
+    &__main-message {
+      margin-left: 40px;
+    }
+  }
+}
+@media screen and(max-width: $tablet-size) {
+  .enroll {
+    max-width: 768px;
+    align-items: start;
+
+    &__title {
+      margin: 40px 0 180px;
+      font-size: 100px;
+      line-height: 100px;
+      max-width: 571px;
+    }
+    &__main-message {
+      margin-bottom: 80px;
+    }
+  }
+}
+@media screen and (max-width: 672px) {
+  .enroll {
+    max-width: 320px;
+    &__main-message {
+      max-width: 280px;
+      margin: 0 auto 20px;
+    }
+    &__title {
+      font-size: 48px;
+      line-height: 50px;
+    }
+    &__input {
+      max-width: 175px;
+      height: 50px;
+    }
+    &__button {
+      max-width: 107px;
+      font-size: 11px;
+      line-height: 24px;
+    }
+  }
+}

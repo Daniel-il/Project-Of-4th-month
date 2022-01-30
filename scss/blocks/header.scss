@@ -1,0 +1,128 @@
+.header {
+  background-color: $primary-color-1;
+  max-width: $desktop-size;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  &__logo {
+    max-width: 40px;
+    max-height: 40px;
+    width: 100%;
+    margin: 22px 0 22px 50px;
+  }
+  &__logo:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+  }
+  &__navigation {
+    display: flex;
+    max-width: 351px;
+    width: 100%;
+    margin-right: 50px;
+  }
+  &__links {
+    display: flex;
+    max-width: 351px;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: $primary-color-2;
+    font-size: 16px;
+    font-family: $font-family;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  &__link:hover {
+    font-weight: 700;
+  }
+  &__burger-button {
+    background-image: url(../../img/burger-button.svg);
+    height: 30px;
+    min-width: 32px;
+    padding: 0;
+    background-color: $primary-color-1;
+    border: none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 30px 40px 23px 0;
+    cursor: pointer;
+    display: none;
+  }
+  &__close-button {
+    background-image: url(../../img/close-button.svg);
+    height: 32px;
+    min-width: 32px;
+    padding: 0;
+    background-color: $primary-color-1;
+    border: none;
+    background-repeat: no-repeat;
+    margin: 24px 40px 30px 0;
+    display: none;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: $tablet-size) {
+  .header {
+    max-width: 768px;
+
+    &__logo {
+      max-width: 36px;
+      max-height: 36px;
+      margin-left: 22px;
+    }
+    &__logo_disabled {
+      display: none;
+    }
+    &__navigation {
+      display: none;
+      margin-left: 40px;
+    }
+    &__navigation_active {
+      display: flex;
+    }
+    &__burger-button_active {
+      display: flex;
+    }
+    &__close-button_active {
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 672px) {
+  .header {
+    &__navigation {
+      max-width: 114px;
+    }
+    &__logo {
+      width: 30px;
+      height: 30px;
+    }
+    &__links {
+      flex-direction: column;
+      max-width: 114px;
+      margin: 76px 0 26px;
+    }
+    &__list-item {
+      max-width: 114px;
+      width: 100%;
+    }
+    &__close-button {
+      margin: 23px 17px 26px 0;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__burger-button {
+      margin: 28px 17px 17px 0;
+    }
+  }
+}

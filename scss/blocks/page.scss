@@ -1,0 +1,9 @@
+.page {
+  display: flex;
+  font-family: $font-family;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: $desktop-size;
+  width: 100%;
+}

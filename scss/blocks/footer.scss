@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  margin: 0 auto;
+  max-width: $desktop-size;
+  width: 100%;
+  font-family: $font-family;
+  background-color: $primary-color-1;
+  &__copyright {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-color-2;
+    margin: 40px 0 40px 40px;
+  }
+}
+@media screen and (max-width: 672px) {
+  .footer {
+    max-width: 320px;
+    &__copyright {
+      margin: 20px 20px 0 20px;
+    }
+  }
+}
