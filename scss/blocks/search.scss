@@ -73,8 +73,8 @@
 
     &__heading {
       margin-bottom: 40px;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 28px;
     }
     &__description {
       margin-bottom: 60px;
@@ -93,17 +93,20 @@
 @media screen and(max-width: $tablet-size) {
   .search {
     max-width: 768px;
-
+    &__image {
+      min-width: 688px;
+      min-height: 360px;
+    }
     &__column-container {
-      margin-left: 0;
+      max-width: 688px;
     }
     &__message-container {
-      margin-left: 44px;
+      margin: 0  0 40px 40px;
       align-self: flex-start;
     }
   }
 }
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 710px) {
   .search {
     max-width: 320px;
 
@@ -115,6 +118,8 @@
     }
     &__heading {
       margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 20px;
     }
     &__description {
       font-size: 32px;
@@ -122,8 +127,8 @@
       max-width: 280px;
     }
     &__image {
-      max-width: 280px;
-      max-height: 147px;
+      min-width: 280px;
+      min-height: 147px;
     }
     &__message-container {
       margin: 0 0 20px 0;

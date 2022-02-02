@@ -9,7 +9,7 @@
 
   &__main-message {
     display: flex;
-    margin-bottom: 120px;
+    margin-bottom: 36px;
     flex-direction: column;
     max-width: 685px;
     width: 100%;
@@ -85,26 +85,29 @@
     align-items: start;
 
     &__title {
-      margin: 40px 0 180px;
+      margin: 40px 0 190px;
       font-size: 100px;
       line-height: 100px;
       max-width: 571px;
     }
     &__main-message {
-      margin-bottom: 80px;
+      margin-bottom: 40px;
     }
   }
 }
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 710px) {
   .enroll {
     max-width: 320px;
     &__main-message {
       max-width: 280px;
-      margin: 0 auto 20px;
+      margin: 40px auto 20px;
+      padding-top: 20px;
+      border-top: solid 1px white;
     }
     &__title {
       font-size: 48px;
-      line-height: 50px;
+      line-height: 56px;
+      margin-top: 0 0 200px;
     }
     &__input {
       max-width: 175px;

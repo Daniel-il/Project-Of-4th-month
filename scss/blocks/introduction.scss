@@ -61,7 +61,7 @@
   .introduction {
     grid-template-columns: minmax(min-content, 1fr);
     justify-items: center;
-    max-width: 642px;
+    max-width: 708px;
     &__message-container {
       max-width: 624px;
       margin: 0;
@@ -80,6 +80,7 @@
     max-width: 688px;
     justify-items: start;
     margin-bottom: 40px;
+    grid-template-rows: 268px 1fr;
 
     &__title {
       max-width: 624px;
@@ -94,7 +95,7 @@
     }
   }
 }
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 710px) {
   .introduction {
     max-width: 320px;
     grid-template-rows: 132px 1fr;
@@ -109,6 +110,7 @@
     &__image {
       max-width: 280px;
       max-height: 242px;
+      margin-top: 60px;
     }
     &__description {
       font-size: 14px;

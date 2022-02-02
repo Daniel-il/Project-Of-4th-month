@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/pages/index.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>Курс по фотографии</title>
   </head>
   <body class="page">
@@ -49,6 +49,13 @@
         <div class="composition__text-container">
           <h2 class="composition__heading">Композиция</h2>
           <p class="composition__subheading">Изучите композицию</p>
+        </div>
+        <img
+          src="./img/highway_road.png"
+          alt="Серпантин"
+          class="composition__image"
+        />
+        <div class="composition__text-container">
           <p class="composition__text">
             Вы изучите гармоничное размещение всех элементов изображения на
             <span class="composition__span">снимке.</span>
@@ -58,11 +65,7 @@
           </p>
           <a href="#enroll" class="composition__enroll-button">Записаться!</a>
         </div>
-        <img
-          src="./img/highway_road.png"
-          alt="Серпантин"
-          class="composition__image"
-        />
+
         <ul class="composition__advices">
           <li class="composition__advice">
             <p class="composition__advice-text">
@@ -102,28 +105,33 @@
               <p class="camera__description-text">Обработка</p>
             </li>
           </ul>
-          <h3 class="camera__comments-heading">отзывы про часть о камерах:</h3>
         </div>
         <img
           src="./img/summer_woods.png"
           alt="Летний лес"
           class="camera__image"
         />
-        <div class="camera__comment-container">
-          <p class="camera__comment-text">
-            на этом курсе я научился пользоваться камерой, как настоящий
-            профессионал!
-          </p>
-          <p class="camera__comment-author">Питер, водитель.</p>
-          <p class="camera__comment-account">@piter123</p>
-        </div>
-        <div class="camera__comment-container">
-          <p class="camera__comment-text">
-            супер крутой курс! на части про фотики я стал разбираться в
-            предназначении кнопок
-          </p>
-          <p class="camera__comment-author">Джон, спортсмен.</p>
-          <p class="camera__comment-account">@john_sport</p>
+        <div class="camera__comments">
+          <h3 class="camera__comments-heading">отзывы про часть о камерах:</h3>
+          <ul class="camera__comment-list">
+            <li class="camera__comment-container">
+              <p class="camera__comment-text">
+                на этом курсе я научился пользоваться камерой, как настоящий
+                профессионал!
+              </p>
+              <p class="camera__comment-author">Питер, водитель.</p>
+              <p class="camera__comment-account">@piter123</p>
+            </li>
+
+            <li class="camera__comment-container">
+              <p class="camera__comment-text">
+                супер крутой курс! на части про фотики я стал разбираться в
+                предназначении кнопок
+              </p>
+              <p class="camera__comment-author">Джон, спортсмен.</p>
+              <p class="camera__comment-account">@john_sport</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="search" id="search">
