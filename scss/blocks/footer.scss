@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  margin: 0 auto;
+  max-width: $desktop-size;
+  width: 100%;
+  font-family: $font-family;
+  background-color: $primary-color-1;
+  &__copyright {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: $primary-color-2;
+    margin: 46px 0 46px 46px;
+  }
+}
+@media screen and (max-width: &tablet-size) {
+  .footer {
+    &__copyright {
+      margin: 40px 0 40px 40px;
+    }
+  }
+}
+@media screen and (max-width: 710px) {
+  .footer {
+    max-width: 320px;
+    &__copyright {
+      margin: 20px 20px 0 20px;
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+}

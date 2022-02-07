@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Курс по фотографии</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img src="./img/logo.svg" alt="логотип" class="header__logo" />
+      <nav class="header__navigation">
+        <ul class="header__links">
+          <li class="header__list-item">
+            <a href="#composition" class="header__link">Композиция</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#camera" class="header__link">Камера</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#search" class="header__link">Поиск заказов</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="header__burger-button header__burger-button_active"
+        type="button"
+      ></button>
+      <button class="header__close-button" type="button"></button>
+    </header>
+    <main>
+      <section class="introduction">
+        <h1 class="introduction__title">Курс по фотографии</h1>
+        <img
+          src="./img/winter_woods.png"
+          alt="Зимний лес"
+          class="introduction__image"
+        />
+        <div class="introduction__message-container">
+          <p class="introduction__description">
+            Фотография в природных условиях, уроки по композиции и по
+            пользованию камерой.
+          </p>
+          <a href="#composition" class="introduction__more-button">Подробнее</a>
+        </div>
+      </section>
+      <section class="composition" id="composition">
+        <div class="composition__text-container">
+          <h2 class="composition__heading">Композиция</h2>
+          <p class="composition__subheading">Изучите композицию</p>
+        </div>
+        <img
+          src="./img/highway_road.png"
+          alt="Серпантин"
+          class="composition__image"
+        />
+        <div class="composition__text-container">
+          <p class="composition__text">
+            Вы изучите гармоничное размещение всех элементов изображения на
+            <span class="composition__span">снимке.</span>
+          </p>
+          <p class="composition__text">
+            Изучите композицию интуитивную и какие-то определённые законы.
+          </p>
+          <a href="#enroll" class="composition__enroll-button">Записаться!</a>
+        </div>
+
+        <ul class="composition__advices">
+          <li class="composition__advice">
+            <p class="composition__advice-text">
+              Правило третей, при котором нужно располагать объекты на
+              пересечениях.
+            </p>
+          </li>
+          <li class="composition__advice">
+            <p class="composition__advice-text">
+              Простота: убирай всё лишнее и кадрируй!
+            </p>
+          </li>
+          <li class="composition__advice">
+            <p class="composition__advice-text">
+              Равновесие: уравновесь пятна объекта и фона.
+            </p>
+          </li>
+          <li class="composition__advice">
+            <p class="composition__advice-text">
+              3D глубина кадра: расположи объект позади и перед другими
+              предметами.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="camera" id="camera">
+        <div class="camera__text-container">
+          <h2 class="camera__heading">камера</h2>
+          <ul class="camera__description-list">
+            <li class="camera__description-item">
+              <p class="camera__description-text">Настройка</p>
+            </li>
+            <li class="camera__description-item">
+              <p class="camera__description-text">Съемка</p>
+            </li>
+            <li class="camera__description-item">
+              <p class="camera__description-text">Обработка</p>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./img/summer_woods.png"
+          alt="Летний лес"
+          class="camera__image"
+        />
+        <div class="camera__comments">
+          <h3 class="camera__comments-heading">отзывы про часть о камерах:</h3>
+          <ul class="camera__comment-list">
+            <li class="camera__comment-container">
+              <p class="camera__comment-text">
+                на этом курсе я научился пользоваться камерой, как настоящий
+                профессионал!
+              </p>
+              <p class="camera__comment-author">Питер, водитель.</p>
+              <p class="camera__comment-account">@piter123</p>
+            </li>
+
+            <li class="camera__comment-container">
+              <p class="camera__comment-text">
+                супер крутой курс! на части про фотики я стал разбираться в
+                предназначении кнопок
+              </p>
+              <p class="camera__comment-author">Джон, спортсмен.</p>
+              <p class="camera__comment-account">@john_sport</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="search" id="search">
+        <div class="search__column-container">
+          <h2 class="search__heading">поиск заказов</h2>
+          <p class="search__description">Научим находить заказы!</p>
+          <img src="./img/tree.png" alt="Дерево" class="search__image" />
+        </div>
+        <div class="search__message-container">
+          <p class="search__message">
+            Мы научим вас искать заказы на всяких фриланс биржах, а когда вы
+            сделаете крутое портфолио, мы поможем найти постоянную работу.
+          </p>
+          <a href="#enroll" class="search__enroll-button">Записаться!</a>
+        </div>
+      </section>
+      <section class="enroll" id="enroll">
+        <img src="./img/arrow.svg" alt="Стрелка вправо" class="enroll__arrow" />
+        <div class="enroll__main-message">
+          <h2 class="enroll__title">Записаться!Сейчас!</h2>
+          <fieldset class="enroll__input-container">
+            <input
+              type="text"
+              class="enroll__input"
+              placeholder="Ваша почта"
+              required
+            />
+            <button type="submit" class="enroll__button">Записаться!</button>
+          </fieldset>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">2021 Photo-lessons.</p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

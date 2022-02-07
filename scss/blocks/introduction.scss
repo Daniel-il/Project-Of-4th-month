@@ -1,0 +1,129 @@
+.introduction {
+  display: grid;
+  margin: 0 auto 50px;
+  justify-content: space-between;
+  max-width: $desktop-size;
+  width: 100%;
+  font-family: $font-family;
+  grid-template-columns: repeat(2, minmax(360px, 1fr));
+  grid-template-rows: 270px 1fr;
+  column-gap: 50px;
+
+  &__message-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 50px;
+  }
+  &__title {
+    font-size: 100px;
+    line-height: 110px;
+    font-weight: normal;
+    font-family: $font-family;
+    color: $primary-color-3;
+    max-width: 624px;
+    width: 100%;
+    margin: 50px 0 0 48px;
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    color: $primary-color-3;
+    max-width: 469px;
+    width: 100%;
+    margin: 60px 0 170px;
+  }
+  &__more-button {
+    display: flex;
+    max-width: 228px;
+    width: 100%;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid $primary-color-3;
+    border-radius: 9999px;
+    color: $primary-color-3;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__more-button:hover {
+    font-weight: 500;
+  }
+  &__image {
+    max-width: 642px;
+    max-height: 555px;
+    margin: 50px 0 0;
+    width: 100%;
+  }
+}
+@media screen and(max-width: $desktop-size) {
+  .introduction {
+    grid-template-columns: minmax(min-content, 1fr);
+    justify-items: center;
+    max-width: 708px;
+    &__message-container {
+      max-width: 624px;
+      margin: 0;
+      justify-self: self-start;
+    }
+    &__title {
+      margin: 40px 0 0;
+    }
+    &__description {
+      margin: 60px 0;
+    }
+  }
+}
+@media screen and (max-width: $tablet-size) {
+  .introduction {
+    max-width: 688px;
+    justify-items: start;
+    margin-bottom: 40px;
+    grid-template-rows: 268px 1fr;
+
+    &__title {
+      max-width: 624px;
+      font-size: 100px;
+      line-height: 110px;
+      margin-left: 0;
+    }
+    &__image {
+      max-width: 688px;
+      max-height: 594px;
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (max-width: 710px) {
+  .introduction {
+    max-width: 320px;
+    grid-template-rows: 132px 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+    &__title {
+      font-size: 47px;
+      line-height: 56px;
+      max-width: 288px;
+      margin-top: 14px;
+    }
+    &__image {
+      max-width: 280px;
+      max-height: 242px;
+      margin-top: 60px;
+    }
+    &__description {
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 276px;
+      margin: 60px 0 30px;
+    }
+    &__message-container {
+      justify-self: center;
+    }
+    &__more-button {
+      max-width: 169px;
+      max-height: 40px;
+    }
+  }
+}
